@@ -75,7 +75,6 @@ export const leerInput = async (message) => {
 export const listarLugares = async (lugares = []) => {
   const choices = lugares.map((lugar, i) => {
     const idx = `${i + 1}.`;
-
     return {
       value: lugar.id,
       name: `${idx.green} ${lugar.nombre}`,
